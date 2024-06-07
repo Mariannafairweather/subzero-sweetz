@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="bg-slate-50">
       <section>
-        <MaxWidthWrapper className="pb-24 pt-10 lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52">
+        <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52">
           <div className='col-span-2 px-6 lg:px-0 lg:pt-4'>
 
             <div className='relative mx-auto text-center lg:text-left
@@ -14,39 +14,39 @@ export default function Home() {
 
               <div className='absolute w-28 left-0 -top-20 hidden lg:block'>
                 <img src="Screenshot_2024-05-31_at_5.44.12_PM-removebg-preview-2.png" className='w-full' />
-                <h1 className='relative w-fit tracking-tight text-balance mt-16
+              </div>
+              <h1 className='relative w-fit tracking-tight text-balance mt-16
           font-bold !leading-tight text-gray-900 text-5xl
          md:text-6xl lg:text-7xl
-         '>Get Your <span className='bg-name-600 px-2 text-white'> Freeze-Dried Bliss</span>
-                </h1>
-                <p className='mt-8 text-lg lg:pr-10 max-w-prose text-center
+         '>Get Your <span className='bg-red-600 px-2 text-white'> Freeze-Dried Bliss</span>
+              </h1>
+              <p className='mt-8 text-lg lg:pr-10 max-w-prose text-center
   lg:text-left text-balance md:text-wrap'>
-                  pick out your very own freeze-dried candy with SubZero Sweets.
-                  We're not just preserving flavors; we're <span className='font-semibold'>cherishing</span>
-                  your memories,
-                  one sweet bite at a time.
-                </p>
+                Pick out your very own freeze-dried candy with SubZero Sweets.
+                We're not just preserving flavors; we're <span className='font-semibold'>cherishing </span>
+                your memories,
+                one sweet bite at a time.
+              </p>
 
-                <ul className='mt-8 space-y-2 text-left font-medium flex
- flex-col items-center sm:items-start'>
-                  <div className='space-y-2'>
-                    <li className='flex gap-1.5 items-center text-left'>
-                      <Check className='h-5 w-5 shrink-0 text-green-600' />
-                      Nutrititous,Preserves-Taste
-                    </li>
-                    <li className='flex gap-1.5 items-center text-left'>
-                      <Check className='h-5 w-5 shrink-0 text-green-600' />
-                      Long-Lasting,High-Quality
-                    </li>
-                    <li className='flex gap-1.5 items-center text-left'>
-                      <Check className='h-5 w-5 shrink-0 text-green-600' />
-                      Versatile and Hydrating
-                    </li>
-                  </div>
-                </ul>
+              <ul className='mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start'>
+                <div className='space-y-2'>
+                  <li className='flex gap-1.5 items-center text-left'>
+                    <Check className='h-5 w-5 shrink-0 text-green-600' />
+                    Nutrititous, Preserves-Taste
+                  </li>
+                  <li className='flex gap-1.5 items-center text-left'>
+                    <Check className='h-5 w-5 shrink-0 text-green-600' />
+                    Long-Lasting, High-Quality
+                  </li>
+                  <li className='flex gap-1.5 items-center text-left'>
+                    <Check className='h-5 w-5 shrink-0 text-green-600' />
+                    Versatile and Hydrating
+                  </li>
+                </div>
+              </ul>
 
-                <div className='mt-12 flex flex-col sm:flex-row 
- items-center sm:items-start gap-5'></div>
+              <div className='mt-12 flex flex-col sm:flex-row 
+ items-center sm:items-start gap-5'>
                 <div className='flex -space-x-4'>
 
                   <img className='inline-block h-10 w-10 rounded-full
@@ -71,55 +71,40 @@ export default function Home() {
                   />
 
                 </div>
+
                 <div className='flex flex-col justify-between items-center
  sm:items-start'>
 
                   <div className='flex gap-0.5'>
-                    <StarIcon className='h-4 w-4 text-green-600
-  fill-green-600'/>
-
-                    <div className='flex gap-0.5'>
-                      <StarIcon className='h-4 w-4 text-green-600
-  fill-green-600'/>
-
-                      <div className='flex gap-0.5'>
-                        <StarIcon className='h-4 w-4 text-green-600
-  fill-green-600'/>
-
-                        <div className='flex gap-0.5'>
-                          <StarIcon className='h-4 w-4 text-green-600
-  fill-green-600'/>
-
-                          <div className='flex gap-0.5'>
-                            <StarIcon className='h-4 w-4 text-green-600
-  fill-green-600'/>
-
-                            <p><span className='font-semibold'>1,250</span>happy
-                              customers</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div className='col-span-full lg:col-span-1 w-full 
-flex justify-center px-8 sm:px-16 md:px-0 mt-32 
-lg:mx-0 lg:mt-20 h-fit'>
-                      <div className='relative md:mac-w-xl'>
-                        <img src="/your-image.png' className='absolute w-40 
-       lg:w-52 left-56 -top-20 select-none hidden sm:block
-       lg:hidden xl:block" />
-                        <img src="/line.png" className='absolute w-20 -left-6
-       -bottom-6 select-none'/>
-                      </div>
-                    </div>
+                    <StarIcon className='h-4 w-4 text-red-600 fill-red-600' />
+                    <StarIcon className='h-4 w-4 text-red-600 fill-red-600' />
+                    <StarIcon className='h-4 w-4 text-red-600 fill-red-600' />
+                    <StarIcon className='h-4 w-4 text-red-600 fill-red-600' />
+                    <StarIcon className='h-4 w-4 text-red-600 fill-red-600' />
                   </div>
+
+                  <p>
+                    <span className='font-semibold'>1,250</span> happy
+                    customers</p>
                 </div>
               </div>
             </div>
           </div>
-        </MaxWidthWrapper>
-      </section>
+
+
+          <div className='col-span-full lg:col-span-1 w-full 
+flex justify-center px-8 sm:px-16 md:px-0 mt-32 
+lg:mx-0 lg:mt-20 h-fit'>
+            <div className='relative md:mac-w-xl'>
+              <img src="/your-image.png' className='absolute w-40 
+       lg:w-52 left-56 -top-20 select-none hidden sm:block
+       lg:hidden xl:block" />
+              <img src="/line.png" className='absolute w-20 -left-6
+       -bottom-6 select-none'/>
+            </div>
+          </div>
+        </MaxWidthWrapper >
+      </section >
     </div>
   )
 }
