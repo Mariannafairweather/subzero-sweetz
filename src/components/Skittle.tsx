@@ -15,18 +15,18 @@ const Skittle = ({ imgSrc, className, dark = false, ...props }: SkittleProps) =>
         <img
             src={
                 dark
-                    ? '/phone thingy design/phone-template-dark-edges.png'
-                    : '/phone thingy design/phone-template-white-edges.png'
+                    ? '/phone-thingy-design/phone-template-dark-edges.png'
+                    : '/phone-thingy-design/phone-template-white-edges.png'
             }
-            className='pointer-events-none z-50 select-none' 
-            alt= 'phone image'
-            />
+            className='pointer-events-none z-50 select-none'
+            alt='phone image'
+        />
 
-            <div className='absolute -z-10 inset-0'>
-                <img className='object-cover mt-32' src={imgSrc} 
+        <div className='absolute -z-10 inset-0'>
+            <img className='object-cover mt-32' src={imgSrc}
                 alt='overlaying phone image'
-                />
-             </div>
+            />
+        </div>
     </div>
     )
 }
