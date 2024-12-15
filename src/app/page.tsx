@@ -1,10 +1,12 @@
 import { Check, Star, StarIcon } from "lucide-react";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-
+import Skittle from "@/components/Skittle";
+import { Icons } from "@/components/Icons";
+import { Reviews } from '@/components/Reviews'
 export default function Home() {
   return (
-    <div className="bg-slate-50">
+    <div className="bg-white-50">
       <section>
         <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52">
           <div className='col-span-2 px-6 lg:px-0 lg:pt-4'>
@@ -96,15 +98,36 @@ export default function Home() {
 flex justify-center px-8 sm:px-16 md:px-0 mt-32 
 lg:mx-0 lg:mt-20 h-fit'>
             <div className='relative md:mac-w-xl'>
-              <img src="/your-image.png' className='absolute w-40 
+              <img className='absolute w-40 
        lg:w-52 left-56 -top-20 select-none hidden sm:block
-       lg:hidden xl:block" />
-              <img src="/line.png" className='absolute w-20 -left-6
+       lg:hidden xl:block' src="/phone thingy design/whatyb.png" />
+
+              <img src="/phone thingy design/line.png" className='absolute w-20 -left-6
        -bottom-6 select-none'/>
+
+              <Skittle className='w-64' imgSrc='/phone thingy design/fd-candy.png' />
             </div>
           </div>
         </MaxWidthWrapper >
       </section >
+
+      {/* value proposition section */}
+      <section className='bg-slate-100 py-24'>
+        <MaxWidthWrapper className='flex flex-col items-center gap-16
+  sm:gap-32'>
+          <div className='flex flex-col lg:flex-row items-center 
+gap-4 sm:gap-6'>
+            <h2 className='order-1 mt-2 tracking-tight text-center
+            text-balance!leading-tight font-bold text-5x1 md:text-6x1
+            text-gray-900'>What our<span className='relative px-2'>customers <Icons.underline className='hidden sm:block 
+            pointer-events-none
+             absolute inset-x-0 -bottom-6 text-red-500'/>
+             </span>{' '}
+             say
+            </h2>
+          </div>
+        </MaxWidthWrapper>
+      </section>
     </div>
   )
 }
